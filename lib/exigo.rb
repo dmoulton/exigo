@@ -26,6 +26,5 @@ class Exigo
       soap.body = payload
     end
     response.to_hash["#{name}_result".to_sym]
-    #response.to_hash
   end
 end

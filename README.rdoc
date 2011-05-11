@@ -1,6 +1,29 @@
 = exigo
 
-This is a small api library to access the soap api at api.exigo.com.
+This is a small library to access the soap api at api.exigo.com.
+
+The Exigo system is widely used by MLM marketing companies to manage users.
+
+== Using Exigo
+
+You must have a valid Exigo api username, password, and company to access the database.
+
+Here's an example of the LoginCustomer api call:
+  
+  begin
+    conn = Exigo.new(API_USERNAME,API_PASSWORD,API_COMPANY)
+    r1 = conn.login_customer(:LoginName=>username,:Password=>password)
+    r2 = conn.get_login_session(:SessionID=>r1[:session_id])
+    r2[:customer_id] # => exigo user id of the user if they authenticated
+    
+    u = User.find_by_exigo_id(r2[:customer_id])
+  rescue # failed login will throw an exception
+    u = nil
+  end
+  
+If you would like to run the tests, which run against production exigo, copy test/creds.sample.rb to test/creds.rb and modify the credentials to your info.
+
+This is very new and relatively untested. Thus far it has only been tested against the LoginCustomer and GetCustomers api calls.
 
 == Contributing to exigo
  
