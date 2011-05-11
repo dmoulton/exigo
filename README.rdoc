@@ -1,6 +1,6 @@
 = exigo
 
-Description goes here.
+This is a small api library to access the soap api at api.exigo.com.
 
 == Contributing to exigo
  

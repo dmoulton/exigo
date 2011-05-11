@@ -11,3 +11,6 @@ group :development do
   gem "jeweler", "~> 1.6.0"
   gem "rcov", ">= 0"
 end
+
+gem "savon", ">= 0.9.2"
+gem "curb"

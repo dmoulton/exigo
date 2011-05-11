@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "exigo"
   gem.homepage = "http://github.com/dmoulton/exigo"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Access the Exigo API}
+  gem.description = %Q{provides access to exigo's API without 'very much' knowledge of soap}
   gem.email = "dave@themoultons.net"
   gem.authors = ["David Moulton"]
   # dependencies defined in Gemfile
