@@ -1,4 +1,4 @@
-= exigo
+= Exigo
 
 This is a small library to access the soap api at api.exigo.com.
 
