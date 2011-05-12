@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "exigo.gemspec",
     "lib/exigo.rb",
     "test/creds.sample.rb",
     "test/helper.rb",
