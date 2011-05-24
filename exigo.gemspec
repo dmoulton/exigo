@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{exigo}
-  s.version = "0.0.1"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Moulton"]
-  s.date = %q{2011-05-12}
+  s.date = %q{2011-05-24}
   s.description = %q{provides access to exigo's API without 'very much' knowledge of soap}
   s.email = %q{dave@themoultons.net}
   s.extra_rdoc_files = [
