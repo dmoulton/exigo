@@ -19,3 +19,4 @@
   PRICE_TYPE = 0
   ITEM_CODE = ""
   ORDER_TYPE = "Default"
+  TEST_PRODUCT = ""

@@ -45,7 +45,7 @@ class TestExigo < Test::Unit::TestCase
                           "api:WarehouseID" => 5,
                           "api:ShipMethodID" => 6,
                           "api:PriceType" => 1,
-                          "api:Details" => { "api:OrderDetailRequest" => { "api:ItemCode" => "OSM-GIFT","api:Quantity" => 1 } } }
+                          "api:Details" => { "api:OrderDetailRequest" => { "api:ItemCode" => TEST_PRODUCT,"api:Quantity" => 1 } } }
 
     res = conn.new_order(customer,order_properties, EXIGO_ID, true, true)
     assert_equal true,res[:success]
